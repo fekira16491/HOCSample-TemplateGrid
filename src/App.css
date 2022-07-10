@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.item1 {
+  grid-area: myArea1;
+}
+.item2 {
+  grid-area: myArea2;
+}
+.item3 {
+  grid-area: myArea3;
+}
+.item4 {
+  grid-area: myArea4;
+}
+.item5 {
+  grid-area: myArea5;
+}
+.item6 {
+  grid-area: myArea6;
+}
+.item7 {
+  grid-area: myArea7;
+}
+.item8 {
+  grid-area: myArea8;
+}
+.item9 {
+  grid-area: myArea9;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    ".  . . myArea1 myArea1 myArea1 myArea1"
+    ". myArea2 myArea2 myArea2 myArea2 myArea2 myArea2"
+    "myArea3 myArea3 myArea3 myArea3 myArea4 myArea5 myArea6"
+    "myArea7 myArea7 myArea7 myArea8 myArea8 myArea9 myArea9";
+
+  padding: 1px;
+}
+.grid-container > div {
+  background-color: red;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
